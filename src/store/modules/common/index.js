@@ -1,0 +1,45 @@
+import { BaseModuleBuilder } from '../base';
+
+const state = {
+  loading: 0,
+  message: null,
+  error: null,
+}
+
+const getters = {
+  isLoading: (state) => state.loading > 0,
+  error: state => state.error,
+  message: state => state.message,
+}
+
+const actions = {
+}
+
+const mutations = {
+  decreaseLoading(state) {
+    if (state.loading > 0) {
+      state.loading--
+    }
+  },
+  clearLoading(state) {
+    state.loading = 0
+  },
+  clearMessage(state) {
+    state.message = null
+  },
+  clearError(state) {
+    state.error = null
+  }
+}
+
+const module = BaseModuleBuilder.buildModule({
+  state,
+  getters,
+  actions,
+  mutations
+})
+
+export default module;
+
+export const { commonGetters, commonMutations, commonActions } = BaseModuleBuilder.buildComputedNameMaps('common');
+

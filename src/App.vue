@@ -1,28 +1,39 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-main class="blue-grey lighten-5">
+      <Loading :loading="isLoading" />
+      <transition name="fade">
+        <RouterView />
+      </transition>
+    </v-main>
+  </v-app>
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Loading from "@/components/common/Loading";
+import { commonGetters } from "@/store/modules/common";
 
 export default {
-  name: 'App',
+  name: "App",
+  page: {
+    titleTemplate(title) {
+      title = typeof title === "function" ? title(this.$store) : title;
+      return title ? `${title} | CoWeb` : "CoWeb";
+    },
+  },
   components: {
-    HelloWorld
-  }
-}
+    Loading,
+  },
+  data: () => ({
+    //
+  }),
+  computed: {
+    ...commonGetters(["isLoading"]),
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import "@/assets/scss/style";
 </style>
