@@ -1,12 +1,14 @@
 <template>
-  <div class="loading-wrapper" v-if="loading">
-    <div id="loader"></div>
-  </div>
+  <LoaderWrapper :loading="loading">
+    <div id="loader-spin"></div>
+  </LoaderWrapper>
 </template>
 
 <script>
+import LoaderWrapper from "./LoaderWrapper.vue";
 export default {
-  name: "Loading",
+  components: { LoaderWrapper },
+  name: "LoaderSpin",
   props: {
     loading: Boolean,
   },
@@ -14,22 +16,10 @@ export default {
 </script>
 
 <style scoped>
-.loading-wrapper {
-  display: grid;
-  place-items: center;
-  background-color: rgba(244, 246, 249, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-}
-
-#loader {
+#loader-spin {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #d798c1;
+  border-top: 16px solid #275efe;
   width: 120px;
   height: 120px;
   -webkit-animation: spin 2s linear infinite; /* Safari */

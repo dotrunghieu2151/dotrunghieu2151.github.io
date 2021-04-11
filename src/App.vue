@@ -1,7 +1,9 @@
 <template>
   <v-app>
     <v-main class="blue-grey lighten-5">
-      <Loading :loading="isLoading" />
+      <LoaderWrapper :loading="isLoading">
+        <BookLoader />
+      </LoaderWrapper>
       <transition name="fade">
         <RouterView />
       </transition>
@@ -11,8 +13,9 @@
 
 
 <script>
-import Loading from "@/components/common/Loading";
 import { commonGetters } from "@/store/modules/common";
+import LoaderWrapper from "./components/common/loaders/LoaderWrapper.vue";
+import BookLoader from "./components/common/loaders/BookLoader.vue";
 
 export default {
   name: "App",
@@ -23,7 +26,8 @@ export default {
     },
   },
   components: {
-    Loading,
+    LoaderWrapper,
+    BookLoader,
   },
   data: () => ({
     //
