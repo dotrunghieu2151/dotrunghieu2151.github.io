@@ -19,7 +19,7 @@ export default {
 #loader-spin {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #275efe;
+  border-top: 16px solid #1976d2;
   width: 120px;
   height: 120px;
   -webkit-animation: spin 2s linear infinite; /* Safari */

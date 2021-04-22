@@ -1,13 +1,18 @@
 <template>
   <v-app>
-    <v-main class="blue-grey lighten-5">
-      <LoaderWrapper :loading="isLoading">
-        <BookLoader />
-      </LoaderWrapper>
-      <transition name="fade">
-        <RouterView />
-      </transition>
-    </v-main>
+    <v-layout row justify-center>
+      <v-container fluid>
+        <NavBar />
+        <LoaderWrapper :loading="isLoading">
+          <BookLoader />
+        </LoaderWrapper>
+        <v-main>
+          <vue-page-transition name="overlay-left">
+            <router-view />
+          </vue-page-transition>
+        </v-main>
+      </v-container>
+    </v-layout>
   </v-app>
 </template>
 
@@ -16,6 +21,7 @@
 import { commonGetters } from "@/store/modules/common";
 import LoaderWrapper from "./components/common/loaders/LoaderWrapper.vue";
 import BookLoader from "./components/common/loaders/BookLoader.vue";
+import NavBar from "./components/common/layout/NavBar.vue";
 
 export default {
   name: "App",
@@ -28,6 +34,7 @@ export default {
   components: {
     LoaderWrapper,
     BookLoader,
+    NavBar,
   },
   data: () => ({
     //

@@ -25,7 +25,7 @@ export default {
   position: absolute;
   overflow: hidden;
   max-width: 4em;
-  color: #275efe;
+  color: #1976d2;
   animation: loading 4s linear;
 }
 

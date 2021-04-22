@@ -1,8 +1,12 @@
 import home from './home'
+import theory from './theory'
+import flashcards from './flashcards'
 import _404 from '@/views/_404';
 
 export default [
   home,
+  theory,
+  flashcards,
   {
     path: '/404',
     name: '404',
