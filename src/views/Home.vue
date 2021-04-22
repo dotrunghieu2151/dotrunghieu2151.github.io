@@ -22,7 +22,7 @@
         </p>
         <v-btn
           class="get-started-btn pl-9 pr-9"
-          to="/theory/consonants#velar"
+          to="/theory/consonants"
           color="primary"
           >GET STARTED</v-btn
         >
