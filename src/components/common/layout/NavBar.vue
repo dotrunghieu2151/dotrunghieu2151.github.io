@@ -227,6 +227,50 @@ export default {
                 },
               ],
             },
+            {
+              title: "Vowels",
+              name: "theory.vowels",
+              path: "/theory/vowels",
+              children: [
+                {
+                  title: "Monophthongs",
+                  name: "monophthongs",
+                  path: "/theory/vowels#monophthongs",
+                  children: [
+                    {
+                      title: "Height",
+                      name: "height",
+                      path: "/theory/vowels#mono-height",
+                    },
+                    {
+                      title: "Backness",
+                      name: "backness",
+                      path: "/theory/vowels#mono-backness",
+                    },
+                    {
+                      title: "Shape",
+                      name: "shape",
+                      path: "/theory/vowels#mono-shape",
+                    },
+                    {
+                      title: "Length & Degree",
+                      name: "length-degree",
+                      path: "/theory/vowels#mono-length-degree",
+                    },
+                  ],
+                },
+                {
+                  title: "Diphthong",
+                  name: "diphthong",
+                  path: "/theory/vowels#diphthong",
+                },
+                {
+                  title: "Triphthong",
+                  name: "triphthong",
+                  path: "/theory/vowels#triphthong",
+                },
+              ],
+            },
           ],
         },
         {

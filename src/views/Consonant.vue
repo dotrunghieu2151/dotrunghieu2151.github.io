@@ -5,7 +5,7 @@
     <p>
       A consonant is <strong>a basic sound</strong>. English has
       <strong>24</strong> consonant sounds. Some consonants have voices from the
-      voice box and some don’t. These consonants are <strong>voiced</strong> and
+      voicebox and some don’t. These consonants are <strong>voiced</strong> and
       <strong>voiceless</strong> pairs:
     </p>
     <div>
@@ -38,9 +38,21 @@
       During formation, the airstream that flows through the vocal tract is
       hindered somehow.
     </p>
+    <div class="grid-center mt-4 mb-4" id="place-of-articulation">
+      <img
+        style="width: 100%; max-width: 700px"
+        :src="require('@/assets/images/table-manner.png')"
+        alt="Table of Place and Manner of Articulation"
+      />
+      <p style="text-align: center">
+        Table of Place and Manner of Articulation
+      </p>
+    </div>
     <div>
       <!-- Place of aritculation -->
-      <h1 id="place-of-articulation">1. Place of articulation</h1>
+      <h1 id="place-of-articulation">
+        1. Place of articulation (Vị trí cấu âm)
+      </h1>
       <v-divider></v-divider>
       <p class="mt-4">
         Where the sounds are produced in the vocal tract (with articulation
@@ -48,7 +60,13 @@
       </p>
       <!-- Bilabial -->
       <div class="mb-5">
-        <h1 id="bilabial">Bilabial</h1>
+        <h1 id="bilabial">
+          Bilabial
+          <sound-provider sound-src="consonant-titles/1.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /,bai'leibiəl/ – Phụ âm môi
+        </h1>
         <v-divider></v-divider>
         <p class="mt-4">made with 2 lips coming together.</p>
         <div>
@@ -97,7 +115,13 @@
       </div>
       <!-- Labiodental -->
       <div class="mb-5">
-        <h1 id="labiodental">Labiodental</h1>
+        <h1 id="labiodental">
+          Labiodental
+          <sound-provider sound-src="consonant-titles/2.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /'leibiou'dentl/ – Phụ âm môi răng
+        </h1>
         <v-divider></v-divider>
         <p class="mt-4">made with lower lips and upper front teeth.</p>
         <div>
@@ -128,7 +152,13 @@
       </div>
       <!-- Dental -->
       <div class="mb-5">
-        <h1 id="dental">Dental</h1>
+        <h1 id="dental">
+          Dental
+          <sound-provider sound-src="consonant-titles/3.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /ˈdentl/ – Phụ âm răng
+        </h1>
         <v-divider></v-divider>
         <p class="mt-4">made with tongue tip or blade and upper front teeth.</p>
         <div>
@@ -159,7 +189,13 @@
       </div>
       <!-- Alveolar -->
       <div class="mb-5">
-        <h1 id="alveolar">Alveolar</h1>
+        <h1 id="alveolar">
+          Alveolar
+          <sound-provider sound-src="consonant-titles/4.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /ælˈviːələr/ – Phụ âm chân răng
+        </h1>
         <v-divider></v-divider>
         <p class="mt-4">made with tongue tip or blade with alveolar ridge.</p>
         <div>
@@ -226,7 +262,13 @@
       </div>
       <!-- Palato – alveolar -->
       <div class="mb-5">
-        <h1 id="palato–alveolar">Palato – alveolar</h1>
+        <h1 id="palato–alveolar">
+          Palato – alveolar
+          <sound-provider sound-src="consonant-titles/5.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /ˌpælətoʊ ælˈviːələr/ – Phụ âm vòm – chân răng
+        </h1>
         <v-divider></v-divider>
         <p class="mt-4">
           made with tongue blade and the back of the alveolar ridge.
@@ -277,7 +319,13 @@
       </div>
       <!-- Palato -->
       <div class="mb-5">
-        <h1 id="palato">Palato</h1>
+        <h1 id="palato">
+          Palato
+          <sound-provider sound-src="consonant-titles/6.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /'pælətl/ – Phụ âm vòm
+        </h1>
         <v-divider></v-divider>
         <p class="mt-4">made with front of tongue and hard palate.</p>
         <div>
@@ -299,7 +347,13 @@
       </div>
       <!-- Velar -->
       <div class="mb-5">
-        <h1 id="velar">Velar</h1>
+        <h1 id="velar">
+          Velar
+          <sound-provider sound-src="consonant-titles/7.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /ˈviː.lər/– Phụ âm vòm mềm
+        </h1>
         <v-divider></v-divider>
         <p class="mt-4">made with back of the tongue and soft palate.</p>
         <div>
@@ -339,7 +393,13 @@
       </div>
       <!-- Glottal -->
       <div class="mb-5">
-        <h1 id="glottal">Glottal</h1>
+        <h1 id="glottal">
+          Glottal
+          <sound-provider sound-src="consonant-titles/8.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /'glɔtl/ – Phụ âm cổ họng
+        </h1>
         <v-divider></v-divider>
         <p class="mt-4">made with the glottis.</p>
         <div>
@@ -361,7 +421,13 @@
       </div>
       <!-- Retroflexes -->
       <div class="mb-5">
-        <h1 id="retroflexes">Retroflexes</h1>
+        <h1 id="retroflexes">
+          Retroflexes
+          <sound-provider sound-src="consonant-titles/9.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /'retrəfleks/ – Phụ âm đầu lưỡi
+        </h1>
         <v-divider></v-divider>
         <p class="mt-4">
           made with the tip of the tongue and the back of the alveolar ridge.
@@ -392,7 +458,13 @@
       <p class="mt-4">How airflow is converted in the vocal tract.</p>
       <!-- Bilabial -->
       <div class="mb-5">
-        <h1 id="plosive">Plosive</h1>
+        <h1 id="plosive">
+          Plosive
+          <sound-provider sound-src="consonant-titles/10.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /'pləʊsiv/ – Âm tắt/nổ
+        </h1>
         <v-divider></v-divider>
         <p class="mt-4">
           A complete closure of the articulators involved so that the airstream
@@ -462,7 +534,13 @@
       </div>
       <!-- Fricative -->
       <div class="mb-5">
-        <h1 id="fricative">Fricative</h1>
+        <h1 id="fricative">
+          Fricative
+          <sound-provider sound-src="consonant-titles/11.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /'frikətiv/ – Âm xát
+        </h1>
         <v-divider></v-divider>
         <p class="mt-4">
           2 organs approximate to such an extent that the airstream passes
@@ -559,7 +637,13 @@
       </div>
       <!-- Afficate -->
       <div class="mb-5">
-        <h1 id="afficate">Afficate</h1>
+        <h1 id="afficate">
+          Afficate
+          <sound-provider sound-src="consonant-titles/12.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /'æfrikit/ – Âm tắt – xát
+        </h1>
         <v-divider></v-divider>
         <p class="mt-4">
           A complete closure at some point in the mouth, behind which the air
@@ -595,7 +679,13 @@
       </div>
       <!-- Nasal -->
       <div class="mb-5">
-        <h1 id="nasal">Nasal</h1>
+        <h1 id="nasal">
+          Nasal
+          <sound-provider sound-src="consonant-titles/13.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /'neizl/ – Âm mũi
+        </h1>
         <v-divider></v-divider>
         <p class="mt-4">
           A complete closure at some point in the mouth but the soft palate
@@ -639,7 +729,13 @@
       </div>
       <!-- Lateral -->
       <div class="mb-5">
-        <h1 id="lateral">Lateral</h1>
+        <h1 id="lateral">
+          Lateral
+          <sound-provider sound-src="consonant-titles/14.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /'lætərəl/ – Âm mép lưỡi
+        </h1>
         <v-divider></v-divider>
         <p class="mt-4">
           A partial closure is made at some point in the mouth, the airstream
@@ -664,7 +760,13 @@
       </div>
       <!-- Approximants -->
       <div class="mb-5">
-        <h1 id="approximants">Approximants (semi-vowels)</h1>
+        <h1 id="approximants">
+          Approximants (semi-vowels)
+          <sound-provider sound-src="consonant-titles/15.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /əˈprɑːksəmənt/ – Bán nguyên âm
+        </h1>
         <v-divider></v-divider>
         <p class="mt-4">
           The approach of 1 articular toward another but without the tract being
@@ -766,7 +868,7 @@
       ...
       <p class="mt-5">
         More details in the
-        <router-link to="#place-of-articulation"
+        <router-link to="/theory/consonants#place-of-articulation"
           >Table of Place and Manner of articulation</router-link
         >
       </p>
@@ -797,7 +899,13 @@
       <h1 id="forces-of-articulation">5. Forces of articulation</h1>
       <v-divider></v-divider>
       <p class="mt-4" id="fortis">
-        <strong>- Fortis: </strong>
+        <strong
+          >- Fortis
+          <sound-provider sound-src="consonant-titles/16.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /ˈfɔːtɪs/ – Phụ âm căng :
+        </strong>
         Strong force, often voiceless and normally shorten the preceding vowels.
       </p>
       <p>
@@ -828,7 +936,13 @@
         ...
       </p>
       <p id="lenis">
-        <strong>- Lenis: </strong>
+        <strong
+          >- Lenis
+          <sound-provider sound-src="consonant-titles/17.mp3" v-slot="{ play }">
+            <v-icon @click="play">mdi-volume-high</v-icon>
+          </sound-provider>
+          /ˈliːnɪs/ – Phụ âm yếu :
+        </strong>
         <span
           >Week energy, often voiced and often lengthen the preceding vowels.
         </span>

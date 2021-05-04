@@ -359,3 +359,18 @@ export function debounce(cb, wait, immediate) {
     if (callNow) cb.apply(context, args);
   };
 }
+
+// simple forLoop to use instead of array.map to save performance
+export const forLoop = (arr, cb, start = 0, step = 1) => {
+  for (let i = start; i < arr.length; i += step) {
+    cb(arr[i], i);
+  }
+}
+
+/* Randomize array in-place using Durstenfeld shuffle algorithm */
+export const shuffleArray = (array) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}

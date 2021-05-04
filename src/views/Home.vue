@@ -4,22 +4,14 @@
       <v-col lg="4" md="12">
         <h1 class="home-header">What is CoWeb ?</h1>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          This is an idea-based learning supplementary website for the
+          scientific research movement of the School of Foreign Languages, Hanoi
+          University of Science and Technology. The goal of this website is to
+          become an effective online learning material for students in learning
+          Vowels and Consonants of the Phonetics and Phonology course. We hope
+          that you can find useful information and activities at this website.
         </p>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </p>
+        <p>Thank you!</p>
         <v-btn
           class="get-started-btn pl-9 pr-9"
           to="/theory/consonants"

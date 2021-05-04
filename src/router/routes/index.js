@@ -5,7 +5,7 @@ import _404 from '@/views/_404';
 
 export default [
   home,
-  theory,
+  ...theory,
   flashcards,
   {
     path: '/404',
